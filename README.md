@@ -76,6 +76,16 @@ head(memcas)
 ```
 
 
+
+![bikeshareusers](https://github.com/yenumP/Google-Data-Analytics-Capstone-Project/assets/161215417/1bec1038-8c90-4807-b328-dccad4585cd2)
+
+![monthl![dockrdelectricclassicbike](https://github.com/yenumP/Google-Data-Analytics-Capstone-Project/assets/161215417/757bfa04-c8e4-4f5c-83b2-206f3442d833)
+
+
+
+
+![weeklyridershiptrends](https://github.com/yenumP/Google-Data-Analytics-Capstone-Project/assets/161215417/ddfa2743-f2c8-4ebd-a590-d97f670d9e95)
+
 ### Results
 - Member users makeup 64.6% of the cyclistic bike share company.
 - Casual users makeup 35.4% of the cyclistic bike share company .
