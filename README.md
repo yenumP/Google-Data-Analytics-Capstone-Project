@@ -47,12 +47,14 @@ Data was subsequently cleaned for nulls and duplicates, which were dropped from 
 ### Analysis
 preformed data aggregation using R studio
 ```
- Analysis on ride_length
- 
-mean(divvy_tripdata23$ride_length) #straight average (total ride length / rides)
-median(divvy_tripdata23$ride_length) #midpoint number in the ascending array of ride lengths
-max(divvy_tripdata23$ride_length) #longest ride
-min(divvy_tripdata23$ride_length) #shortest ride
+divvy_tripdata23 %>%
+group_by(member_casual) %>%
+  count(rideable_type)
+
+rider_typeday_peruser<- divvy_tripdata23 %>%
+  select(rideable_type, day_of_week, member_casual) %>%
+  count(rideable_type, day_of_week, member_casual)
+head(rider_typeday_peruser)
 ```
 ```
 #Bike type most used
@@ -62,11 +64,15 @@ bike_used<-divvy_tripdata23%>%
 head(bike_used)
 ```
 ```
-#visualize for bike users
-
-ggplot(data=user)+
-geom_col(mapping=aes(x=member_casual, y=n, fill=member_casual))+
-labs(title= "Figure 4: Cyclistic bike share: Member_casual Cyclists")+ scale_y_continuous(labels = function(x) format(x, scientific = FALSE)) 
+ #Total and average ride length for both casual and member user
+memcas<-divvy_tripdata23 %>%
+  group_by(member_casual) %>%
+  summarise(total_ride_length=sum(ride_length),
+            avg_ride_length=mean(ride_length),
+            max_ride_length=max(ride_length),
+            min_ride_length=min(ride_length))
+head(memcas)
+            
 ```
 
 
