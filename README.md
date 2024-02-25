@@ -16,7 +16,7 @@
 
 
 ### Project Overview
-This capstone project serves as the culmination of the Google Data Analytics Professional Certificate, utilizing publicly available data in accordance with the specified license agreement.
+This capstone project serves as the completion of the Google Data Analytics Professional Certificate, utilizing publicly available data in accordance with the specified license agreement.
 
 
 ### About The Company
